@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main() {
+	// 3. 関数と型
+	// https://docs.google.com/presentation/d/1DtWB-8FcnNb9asxSpIaOLYbAEc9OjBAwMLNxKnPA8pc/edit#slide=id.g7dc1d6af71_0_121
 	var f float64 = 10
 	var n int = int(f)
 

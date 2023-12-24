@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	// 基本構文
+	// 2.基本構文
 	// https://docs.google.com/presentation/d/1CIMDenDLZ7NPNgzmfbCNH_W3dYjaTEBdUYfUuXXuMHk/edit#slide=id.g129fad4b4e0_1_47
 	x := 100
 	x1 := 100_000_000
