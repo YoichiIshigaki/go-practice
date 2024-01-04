@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 	// 3. 関数と型
@@ -75,4 +78,22 @@ func main() {
 	bb[1] = 200          // (4)
 	// [10 200 30 40] 4
 	fmt.Println(cc, cap(cc))
+
+	ns := []int{10, 20, 30, 40, 50}
+
+	// 削除: [10 40 50]
+	ns = slices.Delete(ns, 1, 3)
+	fmt.Println(ns)
+
+	// 挿入: [10 60 70 40 50]
+	ns = slices.Insert(ns, 1, 60, 70)
+	fmt.Println(ns)
+
+	// 要素があるか: true
+	ok := slices.Contains(ns, 70)
+	fmt.Println(ok)
+
+	// ソート: [10 40 50 60 70]
+	slices.Sort(ns)
+	fmt.Println(ns)
 }
